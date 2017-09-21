@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tri Trainer</title>
+		
+	</head>
+	<body>
+		<img src="images/triPic1.jpg" width="600" alt="Tri Logo">   
+		<h2>Sign Up!</h2>
+		<form action="http://54.213.148.253/FinalWebsite/SignUpRetriever" method="post">
+			<label>Name: <input name="name" type="text"></label>
+			<br>
+			<label>Email: <input name="email" type="email"></label>
+			<br>
+			<label>Race Type:
+				  <select name="raceType">
+					<option value="Sprint">Sprint</option>
+					<option value="Olympic">Olympic</option>
+					<option value="Half-Ironman">Half Ironman</option>
+					<option value="Full-Ironman">Full Ironman</option>
+				  </select>
+			</label>
+			<br>
+			<label>Experience:
+				  <select name="experience">
+					<option value="beginner">Beginner</option>
+					<option value="intermediate">Intermediate</option>
+					<option value="advanced">Advanced </option>
+				  </select></label>
+			<br>
+			<!--  
+			<fieldset>
+				  <legend>Gender:</legend>
+				  <label for="female">Female</label>
+				  	<input type="radio" name="gender" id="female" value="F">
+				  <label for="male">Male</label>
+				  	<input type="radio" name="gender" id="male" value="M">
+			</fieldset>-->
+			<br>
+			<button type="submit">Sign Up</button>
+		</form>
+	<style>	
+			html,body {
+				   margin:10;
+				   padding:0;
+				   height:60%;
+				   background:#35FFFC
+			}
+	</style>		
+	</body>
+</html>

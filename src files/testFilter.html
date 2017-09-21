@@ -1,0 +1,71 @@
+ <!--<select id="myDropdown" onchange="filterContent();">
+    <option value="A">All content</option>
+    <option value="B">Some content</option>
+    <option value="C">Little content</option>
+</select>
+<br>
+<br>
+
+
+<div id="contentA">
+    <h1> test A</h1>
+</div>
+<div id="contentB">
+    ** Content B ***
+</div>
+<div id="contentC">
+    ** Content C ***
+</div>
+
+ <script
+function filterContent() {
+	var x = document.createElement("INPUT");
+	x.setAttribute("type", "radio");
+    var user = document.getElementById("myDropdown").value;
+    var contentA = document.getElementById("contentA");
+    var contentB = document.getElementById("contentB");
+    var contentC = document.getElementById("contentC");
+	var img_src1 = "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg";
+	var node = document.getElementById('myDropDown');
+	
+    
+	if(user=="A") {
+		node.innerHTML = "<img src='"+img_src1+"' alt='my image'>";
+        //contentA.style.display="block";
+        //contentB.style.display="block";
+        //contentC.style.display="block";
+    } else if (user=="B") {
+        //contentA.style.display="none";
+        //contentB.style.display="block";
+        //contentC.style.display="block";
+    } else if (user=="C") {
+        //contentA.style.display="none";
+        //contentB.style.display="none";
+        //contentC.style.display="block";
+    }
+}
+</script>
+-->
+
+
+Race Type: <input type="radio" id="myRadio">
+<br>
+<button onclick="myFunction()">submit</button>
+<br>
+<div id="imagedest"></div> 
+<div id="imagedest1"></div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myRadio");
+    var contentB = document.getElementById("contentB");
+    if(x.checked = true){
+    	//x.checked = false;
+        document.getElementById("imagedest").innerHTML = "<img src='training plans/sprint-1.jpg'>";
+        document.getElementById("imagedest1").innerHTML = "<img src='training plans/sprint-2.jpg'>";
+        }
+    
+}
+</script>
+
